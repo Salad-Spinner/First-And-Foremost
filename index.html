@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>First And Foremost</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">First &amp; Foremost</a>
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a class="btn" href="#get-started">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <h1>Build better, ship faster</h1>
+          <p class="lead">A minimal starter for your next project — clean, responsive, and accessible by default.</p>
+          <p class="cta-row">
+            <a class="btn primary" href="#get-started">Get started</a>
+            <a class="btn ghost" href="#about">Learn more</a>
+          </p>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <pre class="mock">/* Your app UI goes here */</pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features container">
+      <article class="feature">
+        <h3>Simple</h3>
+        <p>Easy-to-understand structure so contributors can jump in quickly.</p>
+      </article>
+      <article class="feature">
+        <h3>Responsive</h3>
+        <p>Looks great on phones, tablets, and desktop screens.</p>
+      </article>
+      <article class="feature">
+        <h3>Accessible</h3>
+        <p>Semantic markup and sensible contrast for better accessibility.</p>
+      </article>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About this project</h2>
+        <p>First And Foremost is a skeleton repository to help you start a polished README and website quickly.</p>
+      </div>
+    </section>
+
+    <section id="get-started" class="cta container">
+      <h2>Ready to begin?</h2>
+      <p>Clone the repo and follow the README to get started.</p>
+      <a class="btn primary" href="https://github.com/Salad-Spinner/First-And-Foremost">View on GitHub</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> First And Foremost — Built with ❤️</p>
+    </div>
+  </footer>
+
+  <script>
+    // small script for dynamic year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
